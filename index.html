@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREDATOR V.12 - Premium EA MT5</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-crosshairs"></i> PREDATOR V.12
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#performance">Performa</a></li>
+                <li><a href="#pricing">Harga</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="heroChart"></canvas>
+        <div class="hero-bg-animation">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-crown"></i> Expert Advisor Platinum</div>
+                <h1 class="hero-title" id="heroTitle"><span class="word-dapatkan">Dapatkan</span> <span class="word-robot">Robot</span> <span class="word-trading">Trading</span> <span class="word-dari">Dari</span> <span class="gradient-text word-aditia">PREDATOR V.12</span></h1>
+                <p class="hero-subtitle">Expert Advisor MetaTrader 5 yang dirancang untuk menghasilkan profit konsisten. Teknologi AI-powered dengan manajemen risiko profesional.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">84%</span>
+                        <span class="stat-label">Win Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1K+</span>
+                        <span class="stat-label">User Aktif</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> Mulai Sekarang
+                    </a>
+                    <a href="#performance" class="btn btn-secondary">
+                        <i class="fas fa-chart-area"></i> Lihat Performa
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="trading-chart">
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <div class="chart-dot green"></div>
+                            <div class="chart-dot yellow"></div>
+                            <div class="chart-dot red"></div>
+                            <span>PREDATOR V.12 Pro - XAUUSD</span>
+                        </div>
+                        <div class="chart-body">
+                            <svg viewBox="0 0 400 200" class="chart-svg">
+                                <defs>
+                                    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#d4af37;stop-opacity:0.35" />
+                                        <stop offset="100%" style="stop-color:#d4af37;stop-opacity:0" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M0,150 Q50,140 80,120 T160,80 T240,60 T320,40 T400,20" fill="none" stroke="#d4af37" stroke-width="3"/>
+                                <path d="M0,150 Q50,140 80,120 T160,80 T240,60 T320,40 T400,20 L400,200 L0,200 Z" fill="url(#chartGradient)"/>
+                                <circle cx="400" cy="20" r="5" fill="#d4af37" class="chart-dot-anim"/>
+                            </svg>
+                        </div>
+                        <div class="chart-footer">
+                            <span class="profit">+382.60%</span>
+                            <span class="date">Live Performance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Ticker -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker-track">
+                <span>PREDATOR V.12 <strong>Premium EA</strong></span><i>◆</i>
+                <span>Win Rate <strong>84%</strong></span><i>◆</i>
+                <span>Total Profit <strong>+382%</strong></span><i>◆</i>
+                <span>Max Drawdown <strong>9.6%</strong></span><i>◆</i>
+                <span>Minimal Balance <strong>10K Cent / $100</strong></span><i>◆</i>
+                <span>Garansi <strong>Uang Kembali 100%</strong></span><i>◆</i>
+            </div>
+            <div class="ticker-track">
+                <span>PREDATOR V.12 <strong>Premium EA</strong></span><i>◆</i>
+                <span>Win Rate <strong>84%</strong></span><i>◆</i>
+                <span>Total Profit <strong>+382%</strong></span><i>◆</i>
+                <span>Max Drawdown <strong>9.6%</strong></span><i>◆</i>
+                <span>Minimal Balance <strong>10K Cent / $100</strong></span><i>◆</i>
+                <span>Garansi <strong>Uang Kembali 100%</strong></span><i>◆</i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Fitur Unggulan</span>
+                <h2>Mengapa Pilih <span class="gradient-text">PREDATOR V.12</span>?</h2>
+                <p>EA MT5 dengan teknologi terdepan yang sudah terbukti menghasilkan profit konsisten</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Strategy</h3>
+                    <p>Menggunakan algoritma machine learning yang terus belajar dari pasar untuk mengoptimalkan entry dan exit point.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Risk Management Ketat</h3>
+                    <p>Sistem manajemen risiko otomatis dengan stop loss dinamis dan position sizing berdasarkan balance akun.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Eksekusi Cepat</h3>
+                    <p>Order dieksekusi dalam hitungan milidetik untuk memaksimalkan profit dan meminimalkan slippage.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Trading 24/5</h3>
+                    <p>EA berjalan otomatis 24 jam selama market buka. Tidak perlu pantau layar seharian.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Mudah Diatur</h3>
+                    <p>Instalasi cukup copy paste file EA ke folder MT5. Tersedia panduan lengkap dalam bahasa Indonesia.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support Premium</h3>
+                    <p>Tim support kami siap membantu 24/7 melalui WhatsApp dan Telegram untuk semua user.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section id="performance" class="performance">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Bukti Nyata</span>
+                <h2>Performa <span class="gradient-text">PREDATOR V.12</span></h2>
+                <p>Data performa real dari akun live yang sudah berjalan</p>
+            </div>
+            <div class="performance-grid">
+                <div class="perf-card">
+                    <div class="perf-icon green">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <h3>Total Profit</h3>
+                    <span class="perf-value">+382%</span>
+                    <span class="perf-period">Sejak Januari 2026</span>
+                </div>
+                <div class="perf-card">
+                    <div class="perf-icon blue">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Win Rate</h3>
+                    <span class="perf-value">84%</span>
+                    <span class="perf-period">Rata-rata 1.300+ trades/bulan</span>
+                </div>
+                <div class="perf-card">
+                    <div class="perf-icon purple">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Profit Factor</h3>
+                    <span class="perf-value">2.81</span>
+                    <span class="perf-period">Rata-rata bulanan</span>
+                </div>
+                <div class="perf-card">
+                    <div class="perf-icon orange">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Max Drawdown</h3>
+                    <span class="perf-value">9.6%</span>
+                    <span class="perf-period">Sangat rendah</span>
+                </div>
+            </div>
+
+            <!-- History Table -->
+            <div class="history-section">
+                <h3>Riwayat Profit Bulanan</h3>
+                <div class="table-wrapper">
+                    <table class="history-table">
+                        <thead>
+                            <tr>
+                                <th>Bulan</th>
+                                <th>Profit</th>
+                                <th>Win Rate</th>
+                                <th>Trades</th>
+                                <th>Drawdown</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Januari 2026</td>
+                                <td class="profit-cell">+41.82%</td>
+                                <td>83.4%</td>
+                                <td>1,326</td>
+                                <td>8.7%</td>
+                            </tr>
+                            <tr>
+                                <td>Februari 2026</td>
+                                <td class="profit-cell">+42.31%</td>
+                                <td>82.6%</td>
+                                <td>1,351</td>
+                                <td>10.3%</td>
+                            </tr>
+                            <tr>
+                                <td>Maret 2026</td>
+                                <td class="profit-cell">+40.81%</td>
+                                <td>83.1%</td>
+                                <td>1,309</td>
+                                <td>9.1%</td>
+                            </tr>
+                            <tr>
+                                <td>April 2026</td>
+                                <td class="profit-cell">+41.77%</td>
+                                <td>82.8%</td>
+                                <td>1,344</td>
+                                <td>11.2%</td>
+                            </tr>
+                            <tr>
+                                <td>Mei 2026</td>
+                                <td class="profit-cell">+42.70%</td>
+                                <td>83.7%</td>
+                                <td>1,317</td>
+                                <td>9.8%</td>
+                            </tr>
+                            <tr>
+                                <td>Juni 2026</td>
+                                <td class="profit-cell">+41.94%</td>
+                                <td>82.2%</td>
+                                <td>1,302</td>
+                                <td>10.9%</td>
+                            </tr>
+                            <tr>
+                                <td>Juli 2026</td>
+                                <td class="profit-cell">+42.88%</td>
+                                <td>83.9%</td>
+                                <td>1,338</td>
+                                <td>8.4%</td>
+                            </tr>
+                            <tr>
+                                <td>Agustus 2026</td>
+                                <td class="profit-cell">+39.26%</td>
+                                <td>82.5%</td>
+                                <td>1,321</td>
+                                <td>11.6%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Paket Sewa</span>
+                <h2>Pilih Paket <span class="gradient-text">Sewa</span></h2>
+                <p>Sewa PREDATOR V.12 mulai Rp 350K/minggu, gratis setup & instalasi</p>
+            </div>
+            <div class="garansi-banner">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                    <strong>Jaminan Penuh — Garansi Uang Kembali 100%</strong>
+                    <span>Semua paket dilindungi garansi: jika terjadi Margin Call (MC) pada akun Anda, uang Anda akan kami kembalikan 100%.</span>
+                </div>
+            </div>
+            <div class="pricing-grid pricing-grid-rent">
+                <!-- Sewa 1 Minggu -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Sewa 1 Minggu</h3>
+                        <p>Coba dulu dengan risiko kecil</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">Rp</span>
+                        <span class="amount">350K</span>
+                        <span class="period">/1 minggu</span>
+                    </div>
+                    <div class="guarantee-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <div>
+                            <strong>Garansi Uang Kembali 100%</strong>
+                            <span>Uang kembali 100% jika terjadi MC</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> PREDATOR V.12</li>
+                        <li><i class="fas fa-check"></i> 1 Akun MT5</li>
+                        <li><i class="fas fa-check"></i> Setup Guide PDF + Video</li>
+                        <li><i class="fas fa-check"></i> Gratis Setup & Instalasi</li>
+                        <li><i class="fas fa-check"></i> Support WhatsApp selama sewa</li>
+                        <li><i class="fas fa-check"></i> Update EA selama sewa</li>
+                        <li class="guarantee"><i class="fas fa-shield-halved"></i> Garansi uang kembali 100% jika terjadi MC</li>
+                    </ul>
+                    <a href="https://wa.me/6283123564450?text=Halo%20PREDATOR%20V.12%2C%20saya%20tertarik%20sewa%20paket%201%20Minggu" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Sewa Sekarang
+                    </a>
+                </div>
+
+                <!-- Sewa 2 Minggu -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Sewa 2 Minggu</h3>
+                        <p>Lebih lama, lebih hemat</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">Rp</span>
+                        <span class="amount">650K</span>
+                        <span class="period">/2 minggu</span>
+                    </div>
+                    <div class="guarantee-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <div>
+                            <strong>Garansi Uang Kembali 100%</strong>
+                            <span>Uang kembali 100% jika terjadi MC</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> PREDATOR V.12</li>
+                        <li><i class="fas fa-check"></i> 1 Akun MT5</li>
+                        <li><i class="fas fa-check"></i> Setup Guide PDF + Video</li>
+                        <li><i class="fas fa-check"></i> Gratis Setup & Instalasi</li>
+                        <li><i class="fas fa-check"></i> Support WhatsApp selama sewa</li>
+                        <li><i class="fas fa-check"></i> Update EA selama sewa</li>
+                        <li class="guarantee"><i class="fas fa-shield-halved"></i> Garansi uang kembali 100% jika terjadi MC</li>
+                    </ul>
+                    <a href="https://wa.me/6283123564450?text=Halo%20PREDATOR%20V.12%2C%20saya%20tertarik%20sewa%20paket%202%20Minggu" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Sewa Sekarang
+                    </a>
+                </div>
+
+                <!-- Sewa 3 Minggu -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Sewa 3 Minggu</h3>
+                        <p>Hemat lebih banyak</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">Rp</span>
+                        <span class="amount">900K</span>
+                        <span class="period">/3 minggu</span>
+                    </div>
+                    <div class="guarantee-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <div>
+                            <strong>Garansi Uang Kembali 100%</strong>
+                            <span>Uang kembali 100% jika terjadi MC</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> PREDATOR V.12</li>
+                        <li><i class="fas fa-check"></i> 1 Akun MT5</li>
+                        <li><i class="fas fa-check"></i> Setup Guide PDF + Video</li>
+                        <li><i class="fas fa-check"></i> Gratis Setup & Instalasi</li>
+                        <li><i class="fas fa-check"></i> Support WhatsApp selama sewa</li>
+                        <li><i class="fas fa-check"></i> Update EA selama sewa</li>
+                        <li class="guarantee"><i class="fas fa-shield-halved"></i> Garansi uang kembali 100% jika terjadi MC</li>
+                    </ul>
+                    <a href="https://wa.me/6283123564450?text=Halo%20PREDATOR%20V.12%2C%20saya%20tertarik%20sewa%20paket%203%20Minggu" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Sewa Sekarang
+                    </a>
+                </div>
+
+                <!-- Sewa 1 Bulan (Recommended) -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge"><i class="fas fa-crown"></i> PALING LARIS</div>
+                    <div class="pricing-header">
+                        <h3>Sewa 1 Bulan</h3>
+                        <p>Pilihan terbaik mayoritas user</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">Rp</span>
+                        <span class="amount">1.199K</span>
+                        <span class="period">/1 bulan</span>
+                    </div>
+                    <div class="guarantee-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <div>
+                            <strong>Garansi Uang Kembali 100%</strong>
+                            <span>Uang kembali 100% jika terjadi MC</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> PREDATOR V.12</li>
+                        <li><i class="fas fa-check"></i> 1 Akun MT5</li>
+                        <li><i class="fas fa-check"></i> Setup Guide PDF + Video</li>
+                        <li><i class="fas fa-check"></i> Gratis Setup & Instalasi</li>
+                        <li><i class="fas fa-check"></i> Support WhatsApp selama sewa</li>
+                        <li><i class="fas fa-check"></i> Update EA selama sewa</li>
+                        <li class="guarantee"><i class="fas fa-shield-halved"></i> Garansi uang kembali 100% jika terjadi MC</li>
+                    </ul>
+                    <a href="https://wa.me/6283123564450?text=Halo%20PREDATOR%20V.12%2C%20saya%20tertarik%20sewa%20paket%201%20Bulan" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Sewa Sekarang
+                    </a>
+                </div>
+
+                <!-- Sewa 2 Bulan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Sewa 2 Bulan</h3>
+                        <p>Bonus hemat 2 bulan</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">Rp</span>
+                        <span class="amount">1.999K</span>
+                        <span class="period">/2 bulan</span>
+                    </div>
+                    <div class="guarantee-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <div>
+                            <strong>Garansi Uang Kembali 100%</strong>
+                            <span>Uang kembali 100% jika terjadi MC</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> PREDATOR V.12</li>
+                        <li><i class="fas fa-check"></i> 1 Akun MT5</li>
+                        <li><i class="fas fa-check"></i> Setup Guide PDF + Video</li>
+                        <li><i class="fas fa-check"></i> Gratis Setup & Instalasi</li>
+                        <li><i class="fas fa-check"></i> Support WhatsApp selama sewa</li>
+                        <li><i class="fas fa-check"></i> Update EA selama sewa</li>
+                        <li class="guarantee"><i class="fas fa-shield-halved"></i> Garansi uang kembali 100% jika terjadi MC</li>
+                    </ul>
+                    <a href="https://wa.me/6283123564450?text=Halo%20PREDATOR%20V.12%2C%20saya%20tertarik%20sewa%20paket%202%20Bulan" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Sewa Sekarang
+                    </a>
+                </div>
+
+                <!-- Sewa 3 Bulan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Sewa 3 Bulan</h3>
+                        <p>Hemat paling besar</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">Rp</span>
+                        <span class="amount">2.699K</span>
+                        <span class="period">/3 bulan</span>
+                    </div>
+                    <div class="guarantee-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <div>
+                            <strong>Garansi Uang Kembali 100%</strong>
+                            <span>Uang kembali 100% jika terjadi MC</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> PREDATOR V.12</li>
+                        <li><i class="fas fa-check"></i> 1 Akun MT5</li>
+                        <li><i class="fas fa-check"></i> Setup Guide PDF + Video</li>
+                        <li><i class="fas fa-check"></i> Gratis Setup & Instalasi</li>
+                        <li><i class="fas fa-check"></i> Support WhatsApp selama sewa</li>
+                        <li><i class="fas fa-check"></i> Update EA selama sewa</li>
+                        <li class="guarantee"><i class="fas fa-shield-halved"></i> Garansi uang kembali 100% jika terjadi MC</li>
+                    </ul>
+                    <a href="https://wa.me/6283123564450?text=Halo%20PREDATOR%20V.12%2C%20saya%20tertarik%20sewa%20paket%203%20Bulan" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Sewa Sekarang
+                    </a>
+                </div>
+            </div>
+
+            <div class="balance-note">
+                <i class="fas fa-coins"></i>
+                <div>
+                    <strong>Minimal Balance Akun</strong>
+                    <span>Disarankan 10K Cent / $100 untuk performa optimal & manajemen risiko terbaik.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimoni</span>
+                <h2>Apa Kata <span class="gradient-text">User</span> Kami?</h2>
+                <p>Pengalaman nyata dari trader yang sudah menggunakan PREDATOR V.12</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"EA ini luar biasa! Baru 2 bulan pakai sudah balik modal. Drawdown juga sangat rendah, saya sangat puas."</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">RA</div>
+                        <div>
+                            <strong>Rizky A.</strong>
+                            <span>Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Sebagai pemula, saya tidak paham trading. Tapi dengan PREDATOR V.12, profit jalan otomatis. Support-nya juga sangat membantu!"</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">DW</div>
+                        <div>
+                            <strong>Dewi W.</strong>
+                            <span>Surabaya</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Sudah coba banyak EA, tapi PREDATOR V.12 yang paling konsisten. Win rate tinggi dan risk management-nya sangat bagus."</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">BH</div>
+                        <div>
+                            <strong>Budi H.</strong>
+                            <span>Bandung</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2>Pertanyaan <span class="gradient-text">Umum</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah EA ini aman untuk akun saya?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, PREDATOR V.12 dirancang dengan manajemen risiko yang ketat. Maximum drawdown hanya sekitar 8-10% dan menggunakan stop loss dinamis untuk melindungi modal Anda.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Berapa modal minimum yang dibutuhkan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Minimal balance yang disarankan adalah 10K Cent / $100. Semakin besar balance, semakin optimal pengaturan lot size dan manajemen risiko.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Pair apa saja yang didukung?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>PREDATOR V.12 mendukung major pairs: XAUUSD, EURUSD, GBPUSD, USDJPY, dan AUDUSD. Pair XAUUSD (Gold) memberikan performa terbaik.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bagaimana cara pembelian dan instalasi?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pembelian via WhatsApp/Telegram, pembayaran via bank transfer atau e-wallet. Setelah pembayaran, Anda akan menerima file EA beserta panduan instalasi lengkap.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bagaimana mekanisme garansi uang kembali 100% jika terjadi MC?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Setiap paket dilindungi garansi uang kembali 100%. Jika akun Anda mengalami Margin Call (MC), kami akan mengembalikan 100% uang yang Anda setorkan sebagai kompensasi penuh, sesuai syarat & ketentuan yang berlaku.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hubungi Kami</span>
+                <h2>Siap Memulai <span class="gradient-text">Trading</span>?</h2>
+                <p>Hubungi kami sekarang untuk konsultasi gratis atau langsung order</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card whatsapp-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Chat langsung untuk order atau tanya-tanya</p>
+                    <a href="https://wa.me/6283123564450?text=Halo%20PREDATOR V.12%2C%20saya%20ingin%20tanya%20tentang%20EA" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                    </a>
+                    <span class="contact-note">+62 831-2356-4450</span>
+                </div>
+                <div class="contact-card telegram-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                    <h3>Telegram</h3>
+                    <p>Join grup atau chat personal</p>
+                    <a href="https://t.me/aditianrc" class="btn btn-telegram" target="_blank">
+                        <i class="fab fa-telegram-plane"></i> Buka Telegram
+                    </a>
+                    <span class="contact-note">@aditianrc</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-crosshairs"></i> PREDATOR V.12
+                    </a>
+                    <p>Premium EA MT5 untuk trading otomatis yang menghasilkan profit konsisten.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/6283123564450" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/aditianrc" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://instagram.com/aditianrc" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Fitur</a></li>
+                        <li><a href="#performance">Performa</a></li>
+                        <li><a href="#pricing">Harga</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PREDATOR V.12. All rights reserved.</p>
+                <p class="disclaimer">Trading forex memiliki risiko tinggi. Performa masa lalu tidak menjamin hasil di masa depan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6283123564450?text=Halo%20PREDATOR V.12%2C%20saya%20tertarik%20dengan%20EA%20MT5%20Anda" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat Kami!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
